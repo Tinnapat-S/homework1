@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            .from {
+                border: 2px solid black;
+                width: 450px;
+                height: auto;
+                padding: 20px 40px;
+                border-radius: 20px;
+                align-items: center;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./work.html">Work</a> |
+        <a href="./contact.html">Contact</a>
+        <hr>
+        <h1>Contact Me</h1>
+        <form class="from"action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            Enter Your Info.<br>
+            First name:<br>
+            <input type="text" id="firstName" name="firstName" value=""><br>
+            Your Email:<br>
+            <input type="text" id="inputEmail" name="mailAddress" value=""><br>
+            Choose Your Gender<br>
+            <select name="gender" id="genderSelect" required>
+                <option value=" " disabled selected>---Choose Gender----</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            Messages<br>
+            <input type="textarea" id="otherComment" name="otherMessages" value=""><br>
+            <br>
+            <button type="submit" value="submit">Send</button>
+            <button type="reset" value="clear">Clear</button>
+        </form>
+    </body>
+</html>
